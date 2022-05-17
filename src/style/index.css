@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+  }
+  
+  html{
+  font-size: 16px;
+  --primary:#ffffff; 
+  --secondary:#181918; 
+  --third:#d20f33; 
+  }
+  
+  body{
+    line-height: 1,625;
+    margin: 0;
+    height: 450vh;
+    font-family: 'Open Sans', 'sans-serif' ;
+    color: var(--secondary);
+    background-color: var(--primary);
+    /* background: url('../assets/img/Firefox_Screenshot_2022-05-16T12-53-09.226Z.png'), no-repeat; */
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: 20px auto ;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .component-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+  }
+    .component-div h3{
+      display: block;
+    }
+    .component-div h3::after{
+      content:"";
+      background-color: rgba(117, 190, 218, 0.5);
+      display: block;
+      position:relative;
+      width: 100%;
+      height: 10px;
+      top:-5px
+    }
+
+  .paragraph-div{
+    width: 100%;
+    display: block;  
+  }
+    .paragraph-div p{
+      display: block;
+      text-align:center;
+    }
+
+@media (max-width: 768px){
+  .about img{
+    min-width: 90%;
+  }
+}

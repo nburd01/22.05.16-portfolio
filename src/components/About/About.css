@@ -1,0 +1,32 @@
+.container .about{
+  display: block;
+  background-color: rgba(117, 190, 218, 0.5);
+  height: 80vh;
+  max-width: 960px;
+  }
+
+  .about .img-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+    .about img{
+      display: block;
+      width: 50%;
+      justify-content: center;  
+      align-items: center;  
+    }
+
+  .name-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+  }
+    .name-div h2{
+      display: block; 
+    }
+  
+
+  
