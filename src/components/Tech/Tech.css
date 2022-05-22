@@ -1,0 +1,19 @@
+.tech-list-container{
+    width:80%;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 2em 0 ;
+    line-height:1em;
+    background-color: rgb(122, 130, 123,0.5);
+    border-radius: 20px;
+}
+.tech-list{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 1em ;
+    justify-content: space-around;
+}
+.tech-list span{
+    padding: 1em;
+    line-height:1em;
+}

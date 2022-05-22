@@ -1,0 +1,28 @@
+.resume-items-div{
+    display: flex;
+}
+.cards{
+    display: flex;
+}
+
+.card{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 1em;
+    border-radius:1em;
+    box-shadow: 10px 10px 10px 1px rgb(41, 40, 108,.4);
+    margin: 1em;
+
+}
+.card:hover{
+    border: 1px solid rgb(41, 40, 108);
+    box-shadow: 10px 10px 10px 1px #5a689a;
+    transition: all 0.4s ease-in-out;
+    transform: rotate(1deg) scale(0.95) ;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards{
+        display: block;
+    }
+  }

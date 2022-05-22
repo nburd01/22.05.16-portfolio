@@ -12,7 +12,6 @@
   body{
     line-height: 1,625;
     margin: 0;
-    height: 450vh;
     font-family: 'Open Sans', 'sans-serif' ;
     color: var(--secondary);
     background-color: var(--primary);
@@ -33,6 +32,7 @@
     width: 100%;
     display: flex;
     justify-content: center;  
+
   }
     .component-div h3{
       display: block;
@@ -48,16 +48,23 @@
     }
 
   .paragraph-div{
-    width: 100%;
-    display: block;  
+    display: flex;
+    flex-wrap: wrap;
   }
     .paragraph-div p{
-      display: block;
+      display: flex;
       text-align:center;
+      flex-wrap: wrap;
     }
 
 @media (max-width: 768px){
   .about img{
     min-width: 90%;
+  }
+  .paragraph-div{
+    display: flex;
+    width: 100%;
+    display: block;  
+    flex-wrap: wrap;
   }
 }
