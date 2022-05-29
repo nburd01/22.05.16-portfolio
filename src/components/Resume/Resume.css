@@ -17,7 +17,7 @@
 .card:hover{
     border: 1px solid rgb(41, 40, 108);
     box-shadow: 10px 10px 10px 1px #5a689a;
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.4s ;
     transform: rotate(1deg) scale(0.95) ;
 }
 
