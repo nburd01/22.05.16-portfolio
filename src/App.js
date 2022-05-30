@@ -7,13 +7,26 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import useLocalStorage from 'local-storage';
 
 
 function App() {
-  return (
 
+         const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light');
+        
+         const switchTheme = () => {
+                 const newTheme = theme === 'light' ? 'dark' : 'light'
+                 setTheme(newTheme)
+         }
+ 
+  return (
     
-    <div className="app">
+    <div className="app"data-theme={theme}>
+
+        <div className="btn-toggle">
+                <i onclick={switchTheme} className=''></i>
+                <p>day</p>
+        </div> 
           <Navbar />
 
       <div className="app-container">
@@ -46,7 +59,8 @@ function App() {
                 <Footer  />
         </section>
 
-        </div>  
+        </div> 
+ 
         </div>
 
        );

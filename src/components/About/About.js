@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     //   <!--Navigation-->
-    <div className="container about">
+    <div className="container about" id='about'>
         <div className="component-div">
 
                 <h3>Web Developper</h3>
