@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     //   <!--Navigation-->
-    <div className="container tech">
+    <div className="container tech" id="tech">
         <div className="component-div">
             <span>
                 <h3>My Tech</h3>

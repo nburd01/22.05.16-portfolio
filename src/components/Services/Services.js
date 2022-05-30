@@ -1,15 +1,12 @@
 import React from 'react'
 import './Services.css'
-import { useParams } from 'react-router-dom'
+  
 
 
 export default function Services() {
 
-  const params = useParams
-  console.log('test-services')
-
   return (
-    <div className="container services">
+    <div className="container services" id="services">
       <div className="component-div">
           <span>
               <h3>Services</h3>

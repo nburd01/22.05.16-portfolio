@@ -1,42 +1,54 @@
 import './style/index.css';
 import Navbar from './components/Navbar/Navbar';
-import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 import Tech from './components/Tech/Tech';
+import Services from './components/Services/Services';
 import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
+import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import Services from './components/Services/Services';
-import Footer from './components/Footer/Footer';
-import {Routes, Route} from 'react-router-dom'
-
-
 
 
 function App() {
   return (
 
-      <div className="app">
+    
+    <div className="app">
+          <Navbar />
 
-              <Navbar />
-             <Routes>
-                 <Route path='/' element ={< About/>} />
-                 <Route path='/tech/' element ={< Tech/>} />
-                 <Route path='/portfolio/' element ={< Portfolio/>} />
-                 <Route path='/resume/' element ={< Resume/>} />
-                 <Route path='/services/' element ={< Services/>}>
-                 </Route>
-                 <Route path='/contact/' element ={< Contact/>} />
-                 <Route
-                   path="*"
-                   element={
-                     <main style={{ padding: "1rem" }}>
-                       <p>There's nothing here!</p>
-                     </main>
-                   }
-                 />
-               </Routes>
-               <Footer  />
-      </div>
+      <div className="app-container">
+
+        <section className='one'>
+                <About />
+        </section>
+
+        <section className='two'>
+                <Tech />
+        </section>
+
+        <section className='three'>
+                <Services  />
+        </section>
+
+        <section className='four'>
+                <Portfolio  />
+        </section>
+
+        <section className='five'>
+                <Resume  />
+        </section>
+
+        <section className='six'>
+                <Contact  />
+        </section>
+
+        <section className='seven'>
+                <Footer  />
+        </section>
+
+        </div>  
+        </div>
+
        );
      }
     

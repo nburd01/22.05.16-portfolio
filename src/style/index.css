@@ -35,9 +35,27 @@
     font-weight: bold;
     color: var(--secondary);
     background-color: var(--primary);
+
     /* background: url('../assets/img/Firefox_Screenshot_2022-05-16T12-53-09.226Z.png'), no-repeat; */
   }
 
+  .app-container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  section{
+    display: flex;
+    height: 100vh;
+    justify-content: center;  
+    align-items: center; 
+    scroll-snap-align: start; 
+  }
+
+  section .one{
+    background-color: rgb(24, 76, 132);
+  }
 
   .container{
     display: flex;
@@ -47,6 +65,8 @@
     padding: 20px 20px;
     align-items: center;
     justify-content: center;
+
+
   }
 
   .component-div{

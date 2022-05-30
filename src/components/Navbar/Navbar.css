@@ -1,18 +1,21 @@
 .navbar{
     display: flex;
     width: 100%;
-    /* background-color: var(--third); */
+    /* background-color: var(--third);  */
     justify-content: space-between;
     align-items: center;
     padding: 0 4em;
+    position:fixed ;
+
   } 
 
   nav a{
     text-decoration: none;
-    color: inherit
+    color: inherit;
+    padding: 1em;
   }
   nav a:hover{
-    text-decoration: underline;
-    color: inherit;
+    color: var(--third);
     transition: all 0.4s;
+    cursor: pointer;
   }
