@@ -1,13 +1,13 @@
 import React from 'react'
 import './Navbar.css'
-import {Link} from 'react-router-dom'
+import {Link, Outlet} from 'react-router-dom'
 
 
 export default function Navbar() {
   return (
     <div className="navbar">
       <div className="title">
-        <h1>Title</h1>
+        <h1>Niall Burdon</h1>
       </div>
       <div className="links">
       <nav>
@@ -18,6 +18,7 @@ export default function Navbar() {
         <Link to='/services'>Services</Link>
         <Link to='/contact'>Contact</Link>
     </nav>
+    <Outlet />
       </div>
     </div>
   )

@@ -1,8 +1,18 @@
 .navbar{
     display: flex;
     width: 100%;
-    background-color: var(--third);
+    /* background-color: var(--third); */
     justify-content: space-between;
     align-items: center;
     padding: 0 4em;
   } 
+
+  nav a{
+    text-decoration: none;
+    color: inherit
+  }
+  nav a:hover{
+    text-decoration: underline;
+    color: inherit;
+    transition: all 0.4s;
+  }

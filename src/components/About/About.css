@@ -8,21 +8,33 @@
   .about .img-div{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;  
   }
     .about img{
       display: block;
       width: 50%;
-      justify-content: center;  
+      justify-content: right;  
       align-items: center;  
     }
 
   .name-div{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;  
     align-items: center; 
+    background-color: aqua;
+  }
+
+  .about-description{
+    width: 50%;
+    display: block;
+    justify-content: right; 
+    margin-left: 100%;
+  }
+  .about-description p{
+    display:block;
+    width: 100%;
   }
 
   

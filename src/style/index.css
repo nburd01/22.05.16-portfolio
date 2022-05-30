@@ -7,16 +7,37 @@
   --primary:#ffffff; 
   --secondary:#181918; 
   --third:#d20f33; 
-  }
-  
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url(../assets/fonts/PPNeueMontreal-Book.woff2) format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url(../assets/fonts/PPNeueMontreal-SemiBold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url(../assets/fonts/PPNeueMontreal-Thin.woff2) format('woff2');
+  font-weight: 'light';
+  font-style: normal;
+}
+
   body{
     line-height: 1,625;
     margin: 0;
-    font-family: 'Open Sans', 'sans-serif' ;
+    font-family: 'PPNeueMontreal','Open Sans', 'sans-serif' ;
+    font-weight: bold;
     color: var(--secondary);
     background-color: var(--primary);
     /* background: url('../assets/img/Firefox_Screenshot_2022-05-16T12-53-09.226Z.png'), no-repeat; */
   }
+
 
   .container{
     display: flex;
@@ -36,6 +57,7 @@
   }
     .component-div h3{
       display: block;
+      font-weight: thin;
     }
     .component-div h3::after{
       content:"";
