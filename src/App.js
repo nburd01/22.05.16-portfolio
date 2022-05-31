@@ -7,59 +7,70 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Resume from './components/Resume/Resume';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import useLocalStorage from 'local-storage';
+import useLocalStorage from 'use-local-storage';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
 
-         const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light');
+         const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
         
          const switchTheme = () => {
-                 const newTheme = theme === 'light' ? 'dark' : 'light'
+                 const newTheme = theme === 'light' ? 'dark' : 'light';
+                 console.log('dark/light')
                  setTheme(newTheme)
          }
+         
  
   return (
     
-    <div className="app"data-theme={theme}>
+        <div className="app" data-theme={theme} >
+                <div className="theme-toggle">
 
-        <div className="btn-toggle">
-                <i onclick={switchTheme} className=''></i>
-                <p>day</p>
-        </div> 
-          <Navbar />
+                        <div className="btn-toggle" onClick={switchTheme} >
+                        {/* <p>day</p> */}
+                        <i>
+                        <FontAwesomeIcon icon={faSun} size="2x"/>
+                        </i>
 
-      <div className="app-container">
+                </div>
+                        
+                </div>
 
-        <section className='one'>
-                <About />
-        </section>
+                <div className="app-container">
 
-        <section className='two'>
-                <Tech />
-        </section>
+                                <Navbar />
 
-        <section className='three'>
-                <Services  />
-        </section>
+                        <section className='one'>
+                                <About />
+                        </section>
 
-        <section className='four'>
-                <Portfolio  />
-        </section>
+                        <section className='two'>
+                                <Tech />
+                        </section>
 
-        <section className='five'>
-                <Resume  />
-        </section>
+                        <section className='three'>
+                                <Services  />
+                        </section>
 
-        <section className='six'>
-                <Contact  />
-        </section>
+                        <section className='four'>
+                                <Portfolio  />
+                        </section>
 
-        <section className='seven'>
-                <Footer  />
-        </section>
+                        <section className='five'>
+                                <Resume  />
+                        </section>
 
-        </div> 
+                        <section className='six'>
+                                <Contact  />
+                        </section>
+
+                        <section className='seven'>
+                                <Footer  />
+                        </section>
+
+                </div> 
  
         </div>
 

@@ -2,12 +2,22 @@
     box-sizing: border-box;
   }
   
-  html{
+  :root {
   font-size: 16px;
   --primary:#ffffff; 
   --secondary:#111827; 
   --third:#d20f33; 
 }
+
+[data-theme='dark'] {
+  background-color: var(--secondary);
+  color: var(--primary)
+}
+
+.app {
+  transition: all .5s;
+}
+
 
 @font-face {
   font-family: 'PPNeueMontreal';
@@ -39,6 +49,7 @@
     /* background: url('../assets/img/Firefox_Screenshot_2022-05-16T12-53-09.226Z.png'), no-repeat; */
   }
 
+  
   .app-container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -97,30 +108,29 @@
     .btn-toggle{
       display:flex;
       position: absolute;
-      top: 20px;
-      right: 80px;
-      height: 20px;
-      width: 20px;
+      justify-content: center;
+      align-items: center;
+      top: 25px;
+      right: 30px;
       border-radius: 50%;
-      background-color: var(--primary)
-    }
-    .btn-toggle p{
-        margin-top: 20px;
-        justify-content: center;
+      z-index: 2;
     }
 
-@media (prefers-color-scheme: light){
-  body{
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-}
-@media (prefers-color-scheme: dark){
-  body{
-    background-color: var(--secondary);
-    color: var(--primary);
-  }
-}
+    .btn-toggle i{
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 80px;
+    }
+
+    /* .btn-toggle p{
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+    } */
+
+
 
 @media (max-width: 768px){
   .about img{
