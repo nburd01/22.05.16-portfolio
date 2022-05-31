@@ -9,7 +9,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import useLocalStorage from 'use-local-storage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun } from '@fortawesome/free-solid-svg-icons'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
@@ -18,9 +18,10 @@ function App() {
         
          const switchTheme = () => {
                  const newTheme = theme === 'light' ? 'dark' : 'light';
-                 console.log('dark/light')
                  setTheme(newTheme)
          }
+
+         const icon = theme === 'light' ? faMoon : faSun ;
          
  
   return (
@@ -31,7 +32,7 @@ function App() {
                         <div className="btn-toggle" onClick={switchTheme} >
                         {/* <p>day</p> */}
                         <i>
-                        <FontAwesomeIcon icon={faSun} size="2x"/>
+                        <FontAwesomeIcon icon={icon} size="2x"/>
                         </i>
 
                 </div>
