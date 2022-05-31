@@ -21,7 +21,7 @@ function App() {
                  setTheme(newTheme)
          }
 
-         const icon = theme === 'light' ? faMoon : faSun ;
+         const icon = theme === 'light' ? faSun : faMoon ;
          
  
   return (
