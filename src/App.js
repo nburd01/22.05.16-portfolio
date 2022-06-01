@@ -31,7 +31,6 @@ function App() {
                 <div className="theme-toggle">
 
                         <div className="btn-toggle"  >
-                        {/* <p>day</p> */}
                         <i>
                         <FontAwesomeIcon onClick={switchTheme} icon={icon} size="2x"/>
                         </i>

@@ -7,7 +7,7 @@ export default function Services() {
 
   return (
     <div className="container services" id="services">
-      <div className="component-div">
+      <div className="title-div">
           <span>
               <h3>Services</h3>
           </span>

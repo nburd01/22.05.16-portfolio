@@ -1,14 +1,19 @@
 import React from 'react'
 import './Tech.css'
-
+import JS from '../../assets/img/JS.png';
+import htmlcss from '../../assets/img/htmlcss.png';
+import react from '../../assets/img/react.png';
+import ruby from '../../assets/img/ruby.png';
+import rails from '../../assets/img/rails.png';
+import heroku from '../../assets/img/heroku.png';
 
 
 export default function About() {
 
   return (
     //   <!--Navigation-->
-    <div className="container tech" id="tech">
-        <div className="component-div">
+    <div className="container-small tech" id="tech">
+        <div className="title-div">
             <span>
                 <h3>My Tech</h3>
             </span>
@@ -17,32 +22,25 @@ export default function About() {
             <p>The best way to learn and to grow is by getting out of your comfort zone.</p>
             <p> And this is what getting out of my comfort zone gave me:</p>
         </div>
-        <div className="tech-list-container">
+        <div className="tech-list">
             <div className="tech-list">
-        
-            
-                <span>Figma</span>        
-                <span>Apollo</span>     
-                <span>Express</span>         
-                <span>Cypress</span>         
-                <span>Travis CI</span>        
-                <span>ES6</span>         
-                <span>JavaScript</span>         
-                <span>Nuxt.js</span>          
-                <span>TailwindCSS</span>          
-                <span>REST APIs</span>          
-                <span>CSS</span>          
-                <span>Bootstrap</span>          
-                <span>React.js</span>          
-                <span>SCSS</span>          
-                <span>Photoshop</span>          
-                <span>HTML</span>
-                <span >VanillaJS</span>
-                <span>CSS Modules</span>
-                <span>jQuery</span>
+
+                  <img src={htmlcss} alt="HTML CSS" />
+
+                  <img src={JS} alt="Javascript" />
+
+                  <img src={react} alt="React" />
+
+                  <img src={ruby} alt="Ruby" />
+
+                  <img src={rails} alt="Ruby on Rails" />
+
+                  <img src={heroku} alt="Heroku" />
+
             </div>
 
         </div>
     </div>
+
   )
 }

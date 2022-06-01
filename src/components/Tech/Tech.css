@@ -1,12 +1,6 @@
-.tech-list-container{
-    width:80%;
-    flex-wrap: wrap;
-    display: flex;
-    margin: 2em 0 ;
-    line-height:1em;
-    background-color: var(--secondary);
-    color: var(--primary);
-    border-radius: 1px 20px;
+.tech-list{
+
+
 }
 .tech-list{
     flex-wrap: wrap;
@@ -17,4 +11,9 @@
 .tech-list span{
     padding: 1em;
     line-height:1em;
+}
+.tech-list img{
+    padding: 1em;
+    line-height:1em;
+    height: 75px;
 }

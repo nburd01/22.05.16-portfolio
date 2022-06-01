@@ -5,7 +5,7 @@ import './Resume.css'
 export default function Resume() {
   return (
     <div className="container resume" id="resume">
-        <div className="component-div">
+        <div className="title-div">
             <span>
                 <h3>Résumé</h3>
             </span>
