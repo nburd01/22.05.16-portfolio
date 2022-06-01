@@ -9,7 +9,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import useLocalStorage from 'use-local-storage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 
 
