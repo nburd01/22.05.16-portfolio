@@ -4,8 +4,9 @@
     display: flex;
     margin: 2em 0 ;
     line-height:1em;
-    background-color: rgb(122, 130, 123,0.5);
-    border-radius: 20px;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 1px 20px;
 }
 .tech-list{
     flex-wrap: wrap;

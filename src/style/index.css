@@ -115,15 +115,20 @@
       border-radius: 50%;
       z-index: 2;
     }
-
+    
     .btn-toggle i{
       display: inline-block;
       justify-content: center;
       align-items: center;
       height: 80px;
       width: 80px;
-    }
+      cursor: default;
 
+    }
+    
+    .btn-toggle i:hover{
+      cursor: pointer;
+    }
     /* .btn-toggle p{
       display: inline-block;
       justify-content: center;

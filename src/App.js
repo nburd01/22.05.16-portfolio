@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 
+
 function App() {
 
          const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
@@ -29,10 +30,10 @@ function App() {
         <div className="app" data-theme={theme} >
                 <div className="theme-toggle">
 
-                        <div className="btn-toggle" onClick={switchTheme} >
+                        <div className="btn-toggle"  >
                         {/* <p>day</p> */}
                         <i>
-                        <FontAwesomeIcon icon={icon} size="2x"/>
+                        <FontAwesomeIcon onClick={switchTheme} icon={icon} size="2x"/>
                         </i>
 
                 </div>
