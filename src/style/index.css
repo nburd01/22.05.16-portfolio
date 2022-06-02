@@ -38,6 +38,8 @@
   font-style: normal;
 }
 
+/*   --------------------------   */
+
   body{
     line-height: 1,625;
     margin: 0;
@@ -162,5 +164,13 @@
 @media (max-width: 770px){
   .section{
     overflow: visible;
+  }
+  .container{
+    height: auto;
+    min-height:100vh;
+  }
+  .description-content{
+    flex-wrap: wrap;
+    overflow: hidden;
   }
 }
