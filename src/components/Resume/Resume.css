@@ -27,14 +27,14 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    .cards{
+    .resume .cards{
         justify-content: space-evenly;
         align-items: center;
         display: flex;
         width: 50%;
         flex-direction: column;
     }
-    .card{
+    .resume     .card{
         flex-direction: column;
         display: flex;
         width: 100%;

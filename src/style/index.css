@@ -60,14 +60,17 @@
 
   section{
     display: flex;
-    /* height: 100vh; */
-    max-width: 1080px;
+    height: 100vh;
     justify-content: center;  
     align-items: center; 
     scroll-snap-align: start; 
-    /* padding: auto;  */
     margin: auto; 
-    /* overflow: hidden; */
+    width: 100;
+  }
+
+  .four{
+    background-color: #d20f3356
+
   }
 
   .container{
@@ -87,6 +90,18 @@
     flex-direction: column;
     height: 100vh;
     width: 80%;
+    margin: 20px auto ;
+    padding: 10vh 20px;
+    align-items: center;
+    justify-content: center;
+    align-items: space-between;
+    /* background-color: #d20f3356 */
+  }
+  .container-large{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 1080px;
     margin: 20px auto ;
     padding: 10vh 20px;
     align-items: center;

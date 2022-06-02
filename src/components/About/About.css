@@ -31,7 +31,8 @@
       height: auto;
       object-fit: contain;  
       border-radius: 10%;
-      box-shadow: 10px 10px 25px 1px rgba(0, 0, 0, 0.135);
+      box-shadow: -50px -30px 0px 1px #d20f33;
+      ;
     }
 
   .description-content{

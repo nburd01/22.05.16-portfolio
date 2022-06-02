@@ -19,8 +19,8 @@ export default function About() {
             </span>
         </div>
         <div className="paragraph-div">
-            <p>The best way to learn and to grow is by getting out of your comfort zone.</p>
-            <p> And this is what getting out of my comfort zone gave me:</p>
+            <p>The best way to learn and to grow is by doing.</p>
+            <p> And this is what getting out of my comfort zone gave me :</p>
         </div>
         <div className="tech-list">
 
