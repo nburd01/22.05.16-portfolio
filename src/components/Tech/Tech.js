@@ -23,7 +23,6 @@ export default function About() {
             <p> And this is what getting out of my comfort zone gave me:</p>
         </div>
         <div className="tech-list">
-            <div className="tech-list">
 
                   <img src={htmlcss} alt="HTML CSS" />
 
@@ -36,8 +35,7 @@ export default function About() {
                   <img src={rails} alt="Ruby on Rails" />
 
                   <img src={heroku} alt="Heroku" />
-
-            </div>
+     
 
         </div>
     </div>

@@ -7,7 +7,9 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="title">
-        <h1>Niall Burdon</h1>
+        <h1>
+        <Link to='#about'>Niall Burdon</Link>
+        </h1>
       </div>
       <div className="links">
           <nav>
