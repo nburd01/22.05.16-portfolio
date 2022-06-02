@@ -64,4 +64,14 @@
       .img-div{
         justify-content: center;
       }
+      .img-div img{
+        display: flex;
+        max-width: 100%;
+        max-height: 60vh;
+        height: auto;
+        object-fit: contain;  
+        border-radius: 10%;
+        box-shadow: -20px -10px 0px 1px #d20f33;
+        ;
+      }
     }
