@@ -15,7 +15,7 @@ export default function Resume() {
             <p>A brief description of my previous employment and educational background</p>
         </div>
 
-        <div className="resume-items-div">
+        <div className="items-div">
 
             <div className="cards">
               <div className="card">

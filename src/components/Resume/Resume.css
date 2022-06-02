@@ -1,4 +1,4 @@
-.resume-items-div{
+.items-div{
     display: flex;
 }
 .cards{
@@ -21,8 +21,22 @@
     transform: rotate(1deg) scale(0.95) ;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
+    .items-div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     .cards{
-        display: block;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+    }
+    .card{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
     }
   }
