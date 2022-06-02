@@ -14,8 +14,9 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
+        const defaultLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        const [theme, setTheme] = useLocalStorage('theme', defaultLight ? 'dark' : 'light');
 
-         const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
         
          const switchTheme = () => {
                  const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -25,7 +26,7 @@ function App() {
          const icon = theme === 'light' ? faSun : faMoon ;
          
  
-  return (
+  return (      
     
         <div className="app" data-theme={theme} >
                 <div className="theme-toggle">
@@ -51,12 +52,12 @@ function App() {
                                 <Tech />
                         </section>
 
-                        <section className='three'>
-                                <Services  />
-                        </section>
-
                         <section className='four'>
                                 <Portfolio  />
+                        </section>
+
+                        <section className='three'>
+                                <Services  />
                         </section>
 
                         <section className='five'>

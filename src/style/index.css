@@ -4,11 +4,15 @@
   
   :root {
   font-size: 16px;
-  --primary:#ffffff; 
+  --primary:##b8e2f2; 
   --secondary:#111827; 
   --third:#d20f33; 
 }
 
+[data-theme='light'] {
+  background-color: var(--primary);
+  color: var(--secondary)
+}
 [data-theme='dark'] {
   background-color: var(--secondary);
   color: var(--primary)
@@ -58,12 +62,14 @@
 
   section{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
+    max-width: 1080px;
     justify-content: center;  
     align-items: center; 
     scroll-snap-align: start; 
-    padding: 15%;
-    overflow: hidden;
+    /* padding: auto;  */
+    margin: auto; 
+    /* overflow: hidden; */
   }
 
   .container{
@@ -75,7 +81,7 @@
     padding: 10vh 20px;
     align-items: center;
     justify-content: center;
-    align-items: space-between;
+    align-items: space-around;
     /* background-color: #d20f3356 */
   }
   .container-small{
@@ -149,14 +155,16 @@
 
 
 
-@media (max-width: 768px){
-  .about img{
-    min-width: 90%;
+@media (max-width: 1080px){
+
+}
+@media (max-width: 1000px){
+  .navbar{
+    background-color:#d20f33
   }
-  .paragraph-div{
-    display: flex;
-    width: 100%;
-    display: block;  
-    flex-wrap: wrap;
+}
+@media (max-width: 770px){
+  .section{
+    overflow: visible;
   }
 }

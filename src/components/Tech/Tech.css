@@ -1,8 +1,4 @@
 .tech-list{
-
-
-}
-.tech-list{
     flex-wrap: wrap;
     display: flex;
     padding: 1em ;

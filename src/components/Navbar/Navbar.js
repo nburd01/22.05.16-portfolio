@@ -14,8 +14,8 @@ export default function Navbar() {
             <Link to='#about'>Home </Link>
             <Link to='#tech'>Tech </Link>
             <Link to='#portfolio'>Portfolio</Link>
-            <Link to='#resume'>Resume</Link>
             <Link to='#services'>Services</Link>
+            <Link to='#resume'>Resume</Link>
             <Link to='#contact'>Contact</Link>
         </nav>
       </div> 
