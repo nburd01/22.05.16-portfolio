@@ -4,15 +4,11 @@
   
   :root {
   font-size: 16px;
-  --primary:##b8e2f2; 
+  --primary:#FFF;
   --secondary:#111827; 
   --third:#d20f33; 
 }
 
-[data-theme='light'] {
-  background-color: var(--primary);
-  color: var(--secondary)
-}
 [data-theme='dark'] {
   background-color: var(--secondary);
   color: var(--primary)
