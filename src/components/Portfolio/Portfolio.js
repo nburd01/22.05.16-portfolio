@@ -14,38 +14,31 @@ export default function Portfolio() {
         </div>
         <div className="cards">
           <div className="card">
-            <div className="title">
-              <h2>
-                ProjeK
-              </h2>
-              <p>Description</p>
-            </div>
+            <h2>
+              S.C. Le Rheu
+            </h2>
+            <p>Création de site, UX, UI</p>
           </div>
           <div className="card">
-            <div className="title">
-              <h2>
-                ProjeK
-              </h2>
-              <p>Description</p>
-            </div>
+            <h2>
+              S.C. Le Rheu
+            </h2>
+            <p>Création de site, UX, UI</p>
           </div>
           <div className="card">
-            <div className="title">
-              <h2>
-                ProjeK
-              </h2>
-              <p>Description</p>
-            </div>
+            <h2>
+              S.C. Le Rheu
+            </h2>
+            <p>Création de site, UX, UI</p>
           </div>
           <div className="card">
-            <div className="title">
-              <h2>
-                ProjeK
-              </h2>
-              <p>Description</p>
-            </div>
+            <h2>
+              S.C. Le Rheu
+            </h2>
+            <p>Création de site, UX, UI</p>
           </div>
         </div>
+
     </div>
   )
 }

@@ -68,7 +68,7 @@
     width: 100;
   }
 
-  .four{
+  .three{
     background-color: #d20f3356
 
   }
@@ -165,12 +165,13 @@
       cursor: pointer;
     }
 
-
+/*   --------------------------   */
 
 
 @media (max-width: 1080px){
 
 }
+
 @media (max-width: 1000px){
   .navbar{
     background-color:#d20f33
@@ -181,11 +182,20 @@
     scroll-snap-type: y proximity;
   }
   .section{
-    overflow: visible;
-  }
-  .container{
     height: auto;
-    min-height:100vh;
+    min-height: 100vh;
+
+  }
+
+  .one , .two , .three, .four , .five, .six , .seven{
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .container, .container-small, .container-large{
+    height: auto;
+    
+    margin: auto 1em;
   }
   .description-content{
     flex-wrap: wrap;

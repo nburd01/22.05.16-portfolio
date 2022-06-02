@@ -52,11 +52,11 @@ function App() {
                                 <Tech />
                         </section>
 
-                        <section className='four'>
+                        <section className='three'>
                                 <Portfolio  />
                         </section>
 
-                        <section className='three'>
+                        <section className='four'>
                                 <Services  />
                         </section>
 
