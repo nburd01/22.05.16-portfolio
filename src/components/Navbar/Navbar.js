@@ -17,8 +17,8 @@ export default function Navbar() {
     const changeWidth = () => {
       setWidth(window.innerWidth);
 
-      if(window.innerWidth > 1080){
-        setToggleMenu(true);
+      if(window.innerWidth < 1080){
+        setToggleMenu(false);
       } 
     }
     
@@ -32,13 +32,13 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="title">
+      <div className="title-logo">
         <h1>
         <Link to='#about'>Niall Burdon</Link>
         </h1>
       </div>
 
-      <div className="navigation">
+      {/* <div className="navigation"> */}
         <nav>
             {(toggleMenu  || width > 1080) && (
                           
@@ -64,9 +64,11 @@ export default function Navbar() {
               </div>
                   
              )}
-            <button className="btn" onClick={toggleNavSmallScreen}>BTN</button>
+            <button className="btn" onClick={toggleNavSmallScreen}>
+              <div className="btn-burger"></div>
+            </button>
         </nav>
-      </div>
+      {/* </div> */}
     </div>
   )
 }
