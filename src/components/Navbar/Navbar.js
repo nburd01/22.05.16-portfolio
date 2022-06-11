@@ -1,9 +1,14 @@
 import React,{useState, useEffect} from 'react'
 import './Navbar.css'
 import {HashLink as Link} from 'react-router-hash-link'
+import { faWindowMinimize } from '@fortawesome/free-solid-svg-icons';
+import { cleanup } from '@testing-library/react';
 
 
 export default function Navbar() {
+
+
+
 // -------------------TOGGLE NAV---------------------------------
   const[toggleMenu, setToggleMenu] = useState(false);
   const[width, setWidth] = useState(window.innerWidth)
@@ -29,12 +34,31 @@ export default function Navbar() {
     }
 
   }, [])
+  
+
 
 // -------------------SCROLL EFFECT---------------------------------
+
+  // const[show, setShow]= useState(true)
+  // const controlNavbar = () => {
+  //   if(window.scrollY > 1000) {
+  //     setShow(false)
+  //   } else {
+  //     setShow(true)
+  //   }
+  // }
+
+  // useEffect(() => {
+  //     window.addEventListener('scroll', controlNavbar)
+  //   return () =>{
+  //     window.removeEventListener('scroll', controlNavbar)
+  //   }
+  // },[])
 
 
   return (
     <div className="navbar">
+    {/* <div className={`nav ${show && 'scroll-navbar'}`}> */}
       <div className="title-logo">
         <h1>
         <Link to='#about'>Niall Burdon</Link>
