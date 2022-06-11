@@ -64,9 +64,9 @@ export default function Navbar() {
               </div>
                   
              )}
-            <button className="btn" onClick={toggleNavSmallScreen}>
-              <div className="btn-burger"></div>
-            </button>
+            <div className="btn-div" onClick={toggleNavSmallScreen}>
+              <div className="btn-burger" onClick={toggleNavSmallScreen} />
+            </div>
         </nav>
       {/* </div> */}
     </div>
