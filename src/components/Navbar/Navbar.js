@@ -4,7 +4,7 @@ import {HashLink as Link} from 'react-router-hash-link'
 
 
 export default function Navbar() {
-
+// -------------------TOGGLE NAV---------------------------------
   const[toggleMenu, setToggleMenu] = useState(false);
   const[width, setWidth] = useState(window.innerWidth)
 
@@ -29,6 +29,9 @@ export default function Navbar() {
     }
 
   }, [])
+
+// -------------------SCROLL EFFECT---------------------------------
+
 
   return (
     <div className="navbar">
