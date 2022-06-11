@@ -168,7 +168,7 @@
 
 @media (max-width: 1080px){
   .app-container{
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
   }
   .section{
     height: auto;
