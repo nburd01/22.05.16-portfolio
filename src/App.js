@@ -10,6 +10,7 @@ import Contact from './components/Contact/Contact';
 import useLocalStorage from 'use-local-storage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+// import { products } from 'src/data.js';
 
 
 
@@ -53,7 +54,9 @@ function App() {
                         </section>
 
                         <section className='three'>
+                                {/* {products.map(item => (  */}
                                 <Portfolio  />
+                                {/* ))} */}
                         </section>
 
                         <section className='four'>

@@ -10,18 +10,17 @@ export default function Footer() {
     <div className="container footer">
       <div className="icon-list">
 
-          <i >
-          <FontAwesomeIcon icon={faGithub} size="2x" color="red" />
-          </i>
+        <a href="https://github.com/nburd01">
+            <i >
+            <FontAwesomeIcon icon={faGithub} size="2x" color="red" />
+            </i>
+          </a>
 
-
-          <i>
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </i>
-
-          <i>
-          {/* <img src={codewars} alt="Code Wars" /> */}
-          </i>
+          <a href="https://www.linkedin.com/in/niallburdon/">
+            <i>
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </i>
+          </a>
 
       </div>
     </div>

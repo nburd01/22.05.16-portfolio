@@ -29,14 +29,36 @@
     }
     .resume .cards{
         justify-content: space-evenly;
+        display: flex;
         align-items: center;
-        display: flex;
         width: 100%;
         flex-direction: column;
     }
-    .resume     .card{
-        flex-direction: column;
+    .resume .card{
         display: flex;
         width: 100%;
+
     }
-  }
+    .top-line{
+        display: flex;
+    }
+    .top-line .date p{
+        width: 30%;
+    }
+    .top-line .institution p{
+        width: 70%;
+    }
+    .resume .card .bottom-line{
+        display: block;
+    }
+    
+    .circle{
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius:50%;
+        background-color:rgb(98, 29, 98);
+        z-index: 10;
+        margin: 1px;
+    }
+}

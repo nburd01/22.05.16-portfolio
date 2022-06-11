@@ -158,7 +158,6 @@
       height: 80px;
       width: 80px;
       cursor: default;
-
     }
     
     .btn-toggle i:hover{
@@ -172,11 +171,6 @@
 
 }
 
-@media (max-width: 1000px){
-  .navbar{
-    background-color:#d20f33
-  }
-}
 @media (max-width: 770px){
   .app-container{
     scroll-snap-type: y proximity;
@@ -184,14 +178,13 @@
   .section{
     height: auto;
     min-height: 100vh;
-
   }
 
   .one , .two , .three, .four , .five, .six , .seven{
     height: auto;
     min-height: 100vh;
   }
-  
+
   .container, .container-small, .container-large{
     height: auto;
     
@@ -200,5 +193,16 @@
   .description-content{
     flex-wrap: wrap;
     overflow: hidden;
+  }
+
+  .btn-toggle{
+    top: 90vh;
+    right: 20px;
+    border-radius: 50%;
+    justify-content: right;
+  }
+  .btn-toggle i{
+    display: flex;
+    justify-content: right;
   }
 }

@@ -13,32 +13,15 @@ export default function Portfolio() {
             <p>I also like to get funky! Here are some projects that I've done in the past</p>
         </div>
         <div className="cards">
-          <div className="card">
-            <h2>
-              S.C. Le Rheu
-            </h2>
-            <p>Création de site, UX, UI</p>
-          </div>
-          <div className="card">
-            <h2>
-              S.C. Le Rheu
-            </h2>
-            <p>Création de site, UX, UI</p>
-          </div>
-          <div className="card">
-            <h2>
-              S.C. Le Rheu
-            </h2>
-            <p>Création de site, UX, UI</p>
-          </div>
-          <div className="card">
-            <h2>
-              S.C. Le Rheu
-            </h2>
-            <p>Création de site, UX, UI</p>
-          </div>
+            <div className="card">
+              <a href="https://google.com"target="_blank" rel="noreferrer">
+                <h2>
+                  S.C. Le Rheu
+                </h2>
+                <p>Création de site, UX, UI</p>
+              </a>
+            </div>
         </div>
-
     </div>
   )
 }

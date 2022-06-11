@@ -28,11 +28,23 @@
   margin: 20px 10px;
 }
 .portfolio .card{
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 185, 127);
   width: 30%;
   min-width: 25%;
   height: 30vh;
   margin: 20px 10px;
+}
+
+.circle{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius:50%;
+    background-color:rgb(98, 29, 98);
+    z-index: 10;
+    margin: 1px;
 }
 
 /*   --------------------------   */

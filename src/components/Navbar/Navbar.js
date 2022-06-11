@@ -1,9 +1,35 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import './Navbar.css'
 import {HashLink as Link} from 'react-router-hash-link'
 
 
 export default function Navbar() {
+
+  const[toggleMenu, setToggleMenu] = useState(false);
+  const[width, setWidth] = useState(window.innerWidth)
+
+  const toggleNavSmallScreen = () => {
+    setToggleMenu(!toggleMenu);
+  }
+
+  useEffect(() =>  {
+
+    const changeWidth = () => {
+      setWidth(window.innerWidth);
+
+      if(window.innerWidth > 1080){
+        setToggleMenu(true);
+      } 
+    }
+    
+    window.addEventListener('resize', changeWidth);
+
+    return () => {
+      window.removeEventListener('resize', changeWidth);
+    }
+
+  }, [])
+
   return (
     <div className="navbar">
       <div className="title">
@@ -11,16 +37,36 @@ export default function Navbar() {
         <Link to='#about'>Niall Burdon</Link>
         </h1>
       </div>
-      <div className="links">
-          <nav>
-            <Link to='#about'>Home </Link>
-            <Link to='#tech'>Tech </Link>
-            <Link to='#portfolio'>Portfolio</Link>
-            <Link to='#services'>Services</Link>
-            <Link to='#resume'>Resume</Link>
-            <Link to='#contact'>Contact</Link>
+
+      <div className="navigation">
+        <nav>
+            {(toggleMenu  || width > 1080) && (
+                          
+              <div className="list"> 
+
+                    <Link to='#about' className='items'>Home </Link>
+                
+
+                    <Link to='#tech' className='items'>Tech </Link>
+                  
+                
+                    <Link to='#portfolio' className='items'>Portfolio</Link>
+                  
+                
+                    <Link to='#services' className='items'>Services</Link>
+                  
+                
+                    <Link to='#resume' className='items'>Resume</Link>
+                  
+                
+                    <Link to='#contact' className='items'>Contact</Link>
+                  
+              </div>
+                  
+             )}
+            <button className="btn" onClick={toggleNavSmallScreen}>BTN</button>
         </nav>
-      </div> 
+      </div>
     </div>
   )
 }

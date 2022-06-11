@@ -19,25 +19,59 @@ export default function Resume() {
 
             <div className="cards">
               <div className="card">
+                <div className="card-circle">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                </div>  
                 {/* <img src={profile} alt="My cat" /> */}
-                <p className="date">050293</p>
-                <p className="title">Graduated with Master's Degree in Marketing</p>
+                <div className="top-line">
+                  <p className="date">2022</p>
+                  <p className="institution">The Hacking Project</p>
+                </div>
+                <div className="bottom-line">
+                  <p className="title">Developer Boot Camp (6months)</p>
+                </div>
               </div>
               <div className="card">
+              <div className="card-circle">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                </div>  
                 {/* <img src={profile} alt="My cat" /> */}
-                <p className="date">050293</p>
-                <p className="title">Graduated with Master's Degree in Marketing</p>
+                <div className="top-line">
+                  <p className="date">15-21</p>
+                  <p className="institution">IGR IAE Management School</p>
+                </div>
+                <div className="bottom-line">
+                  <p className="title">Masters Degree in Marketing </p>
+                </div>
               </div>
               <div className="card">
+                  <div className="card-circle">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                </div>  
                 {/* <img src={profile} alt="My cat" /> */}
-                <p className="date">050293</p>
-                <p className="title">Graduated with Master's Degree in Marketing</p>
+                <div className="top-line">
+                  <p className="date">08-14</p>
+                  <p className="institution">High Level Athlete</p>
+                </div>
+                <div className="bottom-line">
+                  <p className="title">Football Goalkeeper in four countries</p>
+                </div>
               </div>
-              
             </div>
+          </div>
 
-        </div>
-    </div>
+
+
+
+
+      </div>
+
   )
 }
  
