@@ -1,0 +1,55 @@
+
+        /*   -----------OLD TOGGLE PROPERTIES ---------------   */
+
+.theme-btn-toggle.dark{
+    background:var(--primary);
+    color:var(--secondary);
+}   
+.theme-btn-toggle.light{
+    background:#F1F1F1;
+    color:#333;
+}   
+
+        /*   -------------NEW TOGGLE THEME BUTTON -------------   */
+
+
+.theme-btn-toggle{
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 2;
+    transition:all 0.2s ease-in-out; 
+    cursor:pointer;
+  }
+  
+  .theme-btn-toggle i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    cursor: default;
+  }
+  
+  .theme-btn-toggle i:hover{
+    cursor: pointer;
+  }
+
+/*   --------------------------   */
+
+@media screen and (max-width:1080px) {
+    .theme-btn-toggle{
+        top: 90vh;
+        right: 20px;
+        border-radius: 50%;
+        justify-content: right;
+      }
+      .theme-btn-toggle i{
+        display: flex;
+        justify-content: right;
+      }
+}

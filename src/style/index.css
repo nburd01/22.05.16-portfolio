@@ -53,30 +53,40 @@
 
   
   .app-container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+    scroll-snap-type: y mandatory; 
+    /* overflow-y: scroll; */
+
   }
 
   section{
     display: flex;
-    height: 100vh;
+    height: auto;
     justify-content: center;  
     align-items: center; 
     scroll-snap-align: start; 
     margin: auto; 
-    width: 100;
   }
 
-  .three{
-    background-color: #d20f3356
 
+
+  .three{
+    display: flex;
+
+    /* scroll-snap-type: none; 
+    overflow-y: none; */
+    align-items: start;
+    justify-content: start;
+    height: auto;
+  }
+
+  .four, .five, .six, .seven{
+    height: 100vh;
   }
 
   .container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 20px auto ;
     padding: 10vh 20px;
