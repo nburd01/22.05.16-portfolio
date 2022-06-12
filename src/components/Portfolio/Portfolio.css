@@ -4,7 +4,7 @@
   column-gap: 50px;
   grid-template-columns: 2fr 1fr 1fr;
   height: 100%;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
 }
 
 .left{
@@ -13,11 +13,11 @@
   display: flex;
   margin-right: 100px ;
   flex-direction: column;
-  background-color: rgb(127, 255, 227);
   width: 100%;
   padding-top: 10em;
   position: sticky;
   top: 100px;
+
 }
 
 .right{
@@ -27,7 +27,7 @@
 
   flex-direction: column;
   padding-top: 10em;
-  background-color: rgb(127, 133, 255);
+  /* background-color: rgb(127, 133, 255); */
   width: 100%;
 }
 
@@ -42,11 +42,15 @@
 }
 
 .portfolio .card{
-  background-color: rgb(255, 185, 127);
+  background-color: #ff8906;
   width: 100%;
   min-width: 25%;
   height: 30vh;
   margin: 20px 10px;
+}
+.portfolio .card a{
+  background-color: #fffffe ;
+
 }
 
 
@@ -58,6 +62,9 @@
     background-color:rgb(98, 29, 98);
     z-index: 10;
     margin: 1px;
+}
+.three .title-div, .three .paragraph-div{
+  color: var(--primary)
 }
 
 /*   --------------------------   */
@@ -90,7 +97,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 10em;
-    background-color: rgb(127, 133, 255);
+    background-color: var(--primary);
     width: 100%;
   }
 
@@ -100,7 +107,7 @@
       min-width: 75%;
   }
   .portfolio .card{
-      background-color: rgb(255, 185, 127);
+    background-color: var(--primary);
       width: 100%;
       height: 30vh;
       margin: 20px 10px;
