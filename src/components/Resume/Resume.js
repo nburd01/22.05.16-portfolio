@@ -12,7 +12,7 @@ export default function Resume() {
         </div>
 
         <div className="paragraph-div">
-            <p>A brief description of my previous employment and educational background</p>
+            <p>A brief description of my previous employment and educational background :</p>
         </div>
 
         <div className="items-div">
@@ -30,7 +30,7 @@ export default function Resume() {
                   <p className="institution">The Hacking Project</p>
                 </div>
                 <div className="bottom-line">
-                  <p className="title">Developer Boot Camp (6months)</p>
+                  <p className="title">Developer Boot Camp (6 months)</p>
                 </div>
               </div>
               <div className="card">

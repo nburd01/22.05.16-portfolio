@@ -4,9 +4,10 @@
   
   :root {
   font-size: 16px;
-  --primary:#FFF;
+  --primary:#fffffe;
   --secondary:#111827; 
   --third:rgb(255, 0, 149); 
+    scroll-behavior: smooth;
 }
 
 [data-theme='dark'] {

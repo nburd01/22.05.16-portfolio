@@ -38,7 +38,11 @@
   width: 100%;  
   justify-content: center;
   align-items: center;
-
+}
+.portfolio .cards a{
+    /* background-color: rgb(127, 255, 227); */
+  width: 100%;  
+  color: white;
 }
 
 .portfolio .card{
@@ -50,7 +54,8 @@
 }
 .portfolio .card a{
   background-color: #fffffe ;
-
+  color: var(--primary);
+  text-decoration: none;
 }
 
 
