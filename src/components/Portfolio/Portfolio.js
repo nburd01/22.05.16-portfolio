@@ -17,94 +17,54 @@ export default function Portfolio() {
       </div>
       <div className="right">
         <div className="cards">
-            <div className="card">
               <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
+                <div className="card">
+                    <h2>
+                      Google 
+                    </h2>
+                    <p>(just kidding)</p>
+                </div>
               </a>
-            </div>
         </div>
         <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
+              <a href="https://yuka-sport-dev2.herokuapp.com"target="_blank" rel="noreferrer">
+                <div className="card">
+                    <h2>
+                      Yuka Sport
+                    </h2>
+                    <p>Création de site, UX, UI</p>
+                </div>
               </a>
-            </div>
         </div>
         <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
+              <a href="https://nburd01.github.io/rawg-project.github.io"target="_blank" rel="noreferrer">
+                <div className="card">
+                    <h2>
+                    RAWG Project
+                    </h2>
+                    <p>Création de site, UX, UI</p>
+                </div>
               </a>
-            </div>
         </div>
         <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
+              <a href="https://nburd01.github.io/react-bloc-notes"target="_blank" rel="noreferrer">
+                <div className="card">
+                    <h2>
+                      Block Notes
+                    </h2>
+                    <p>Création de site, UX, UI</p>
+                </div>
               </a>
-            </div>
         </div>
         <div className="cards">
-            <div className="card">
               <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
+                <div className="card">
+                    <h2>
+                      S.C. Le Rheu
+                    </h2>
+                    <p>Création de site, UX, UI</p>
+                </div>
               </a>
-            </div>
-        </div>
-        <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
-              </a>
-            </div>
-        </div>
-        <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
-              </a>
-            </div>
-        </div>
-        <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
-              </a>
-            </div>
-        </div>
-        <div className="cards">
-            <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
-                <h2>
-                  S.C. Le Rheu
-                </h2>
-                <p>Création de site, UX, UI</p>
-              </a>
-            </div>
         </div>
       </div>
     </div>
