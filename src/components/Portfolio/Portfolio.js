@@ -28,9 +28,9 @@ export default function Portfolio() {
         </div>
         <div className="cards">
             <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
+              <a href="https://yuka-sport-dev2.herokuapp.com/"target="_blank" rel="noreferrer">
                 <h2>
-                  S.C. Le Rheu
+                  Yuka Sport
                 </h2>
                 <p>Création de site, UX, UI</p>
               </a>
@@ -38,9 +38,9 @@ export default function Portfolio() {
         </div>
         <div className="cards">
             <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
+              <a href="https://nburd01.github.io/rawg-project.github.io/"target="_blank" rel="noreferrer">
                 <h2>
-                  S.C. Le Rheu
+                 RAWG Project
                 </h2>
                 <p>Création de site, UX, UI</p>
               </a>
@@ -48,9 +48,9 @@ export default function Portfolio() {
         </div>
         <div className="cards">
             <div className="card">
-              <a href="https://google.com"target="_blank" rel="noreferrer">
+              <a href="https://nburd01.github.io/react-bloc-notes/"target="_blank" rel="noreferrer">
                 <h2>
-                  S.C. Le Rheu
+                  Block Notes
                 </h2>
                 <p>Création de site, UX, UI</p>
               </a>

@@ -1,8 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import './Navbar.css'
 import {HashLink as Link} from 'react-router-hash-link'
-import { faWindowMinimize } from '@fortawesome/free-solid-svg-icons';
-import { cleanup } from '@testing-library/react';
 
 
 export default function Navbar() {
