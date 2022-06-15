@@ -73,8 +73,8 @@
   .three{
     display: flex;
     background-color: #0f0e17;
-    /* scroll-snap-type: none; 
-    overflow-y: none; */
+    scroll-snap-type: none; 
+    overflow-y: none;
     align-items: start;
     justify-content: start;
     height: auto;
