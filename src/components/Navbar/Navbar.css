@@ -15,8 +15,18 @@
   } 
 
 .navbar_active{
-    display: flex;
-    transition: ease-in-out all 0.5s  
+  display: flex;
+  position: fixed;  
+  top: 0vh;
+  height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8em;
+  position:  fixed ;
+  background: rgba(250, 250, 250, 0.886);
+  transition: ease-in-out 0.5s;
+    transform: translateY(-100%);
   } 
 
 
