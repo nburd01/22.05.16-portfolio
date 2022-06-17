@@ -81,12 +81,12 @@ export default function Navbar() {
       // })    
 
   
-// --------------------------------------------------------------
+// ---------------------SCROLL DISAPPEAR EFFECT---------------------------------
 
 const [visibilityChange, setvisibilityChange] = useState(false);
 const [prevOffset, setPrevOffset] = useState(0)    
 
-  const changeNavbarColor = () =>{
+  const changeNavbarVisibility = () =>{
     let scrollY = window.scrollY
     console.log(scrollY)
 
@@ -104,7 +104,7 @@ const [prevOffset, setPrevOffset] = useState(0)
     setPrevOffset(scrollY)
 
   };
-  window.addEventListener('scroll', changeNavbarColor);
+  window.addEventListener('scroll', changeNavbarVisibility);
 
 
   return (
@@ -150,77 +150,3 @@ const [prevOffset, setPrevOffset] = useState(0)
     </div>
   )
 }
-
-
- // -------------------SCROLL BLUE EFFECT---------------------------------
-
-    // const[show, setShow]= useState(null)
-    // const [prevOffset, setPrevOffset] = useState(0)    
-
-    // const controlNavbar = () => {
-    //   let scrollY = window.scrollY
-    //   console.log(scrollY)
-
-    //   if (scrollY === 0) {
-    //     setShow('up')
-    //   }
-
-    //   if (scrollY > prevOffset) {
-    //     setShow('down')
-
-    //   } else if (scrollY < prevOffset){
-    //     setShow('up')
-    //   }
-
-    //   setPrevOffset(scrollY)
-
-    // }
-
-    // useEffect(() => {
-    //     window.addEventListener('scroll', controlNavbar)
-    //   return () =>{
-    //     window.removeEventListener('scroll', controlNavbar)
-    //   }
-    // },[])
-
-  // -------------------SCROLL DISAPPEAR EFFECT---------------------------------
-  // let [prevOffset, setPrevOffset] = useState(0)    
-  // let [scrollDirection, setScrollDirection] = useState(null)
-
-  // function useScrollDirection () {
-  //   let toggleScrollDirection = () => {
-  //     let scrollY = window.scrollY
-  //     console.log(scrollY)
-
-  //     if (scrollY === 0) {
-  //         setScrollDirection("up")
-
-  //     }
-  //     if (scrollY > prevOffset) {
-  //         setScrollDirection("down")
-
-
-  //     } else if (scrollY < prevOffset) {
-  //         setScrollDirection("up")
-
-  //     }
-
-  //     setPrevOffset(scrollY)
-
-  //   }
-
-  //   useEffect(() => {
-  //       window.addEventListener("scroll", toggleScrollDirection)
-  //       return () => {
-  //           window.removeEventListener("scroll", toggleScrollDirection)
-  //       }
-  //   })    
-  //   return scrollDirection 
-  // }
-
-  // // -------------------RETURN ---------------------------------
-
-  // return (
-  //   // <div className="navbar" onScroll={useScrollDirection}>
-  //   // <div className={`navbar ${useState ? 'up' : 'down' }`} onScroll={useScrollDirection} >
-  //     <div className={`navbar${useScrollDirection ? '-down' : '-up' }`}></div>

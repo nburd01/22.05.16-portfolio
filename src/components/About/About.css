@@ -98,4 +98,7 @@
         display: center;
         justify-content: center;
       }
+      .title-div:first-child{
+        padding-top: 1em;
+      }
     }
