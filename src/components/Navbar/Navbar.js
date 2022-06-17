@@ -6,8 +6,7 @@ import {HashLink as Link} from 'react-router-hash-link'
 export default function Navbar() {
 
 
-
-// -------------------TOGGLE NAV---------------------------------
+  // -------------------TOGGLE NAV---------------------------------
   const[toggleMenu, setToggleMenu] = useState(false);
   const[width, setWidth] = useState(window.innerWidth)
 
@@ -35,28 +34,82 @@ export default function Navbar() {
   
 
 
-// -------------------SCROLL EFFECT---------------------------------
+    // -------------------SCROLL EFFECT---------------------------------
 
-  // const[show, setShow]= useState(true)
-  // const controlNavbar = () => {
-  //   if(window.scrollY > 1000) {
-  //     setShow(false)
-  //   } else {
-  //     setShow(true)
-  //   }
-  // }
+    // const[show, setShow]= useState(true)
+    // const controlNavbar = () => {
+    //   if(window.scrollY > 1000) {
+    //     setShow(false)
+    //   } else {
+    //     setShow(true)
+    //   }
+    // }
 
-  // useEffect(() => {
-  //     window.addEventListener('scroll', controlNavbar)
-  //   return () =>{
-  //     window.removeEventListener('scroll', controlNavbar)
-  //   }
-  // },[])
+    // useEffect(() => {
+    //     window.addEventListener('scroll', controlNavbar)
+    //   return () =>{
+    //     window.removeEventListener('scroll', controlNavbar)
+    //   }
+    // },[])
+
+
+      // -------------------SCROLL DISAPPEAR EFFECT---------------------------------
+
+      // const [scrollDirection, setScrollDirection] = useState(null)
+      // const [prevOffset, setPrevOffset] = useState(0)    
+      
+      // const toggleScrollDirection = () => {
+      //    let scrollY = window.scrollY
+      //    console.log(scrollY)
+      //    if (scrollY === 0) {
+      //        setScrollDirection("up")
+      //       //  console.log(scrollY)
+      //        console.log(setScrollDirection)
+      //    }
+      //    if (scrollY > prevOffset) {
+      //        setScrollDirection("down")
+      //    } else if (scrollY < prevOffset) {
+      //        setScrollDirection("up")
+      //    }
+      //    setPrevOffset(scrollY)
+      // }
+      // useEffect(() => {
+      //     window.addEventListener("scroll", toggleScrollDirection)
+      //     return () => {
+      //         window.removeEventListener("scroll", toggleScrollDirection)
+      //     }
+      // })    
+
+  
+// --------------------------------------------------------------
+
+const [visibilityChange, setvisibilityChange] = useState(false);
+const [prevOffset, setPrevOffset] = useState(0)    
+
+  const changeNavbarColor = () =>{
+    let scrollY = window.scrollY
+    console.log(scrollY)
+
+
+     if(window.scrollY >= 100){
+       setvisibilityChange(true);
+     }
+
+     if (scrollY > prevOffset) {
+      setvisibilityChange(true);
+
+     }else{
+      setvisibilityChange(false);
+     }
+    setPrevOffset(scrollY)
+
+  };
+  window.addEventListener('scroll', changeNavbarColor);
 
 
   return (
-    <div className="navbar">
-    {/* <div className={`nav ${show && 'scroll-navbar'}`}> */}
+    // <div className="navbar">
+    <div className={visibilityChange ? 'navbar_visibilityChange' : 'navbar'}>
       <div className="title-logo">
         <h1>
         <Link to='#about'>Niall Burdon</Link>
@@ -97,3 +150,77 @@ export default function Navbar() {
     </div>
   )
 }
+
+
+ // -------------------SCROLL BLUE EFFECT---------------------------------
+
+    // const[show, setShow]= useState(null)
+    // const [prevOffset, setPrevOffset] = useState(0)    
+
+    // const controlNavbar = () => {
+    //   let scrollY = window.scrollY
+    //   console.log(scrollY)
+
+    //   if (scrollY === 0) {
+    //     setShow('up')
+    //   }
+
+    //   if (scrollY > prevOffset) {
+    //     setShow('down')
+
+    //   } else if (scrollY < prevOffset){
+    //     setShow('up')
+    //   }
+
+    //   setPrevOffset(scrollY)
+
+    // }
+
+    // useEffect(() => {
+    //     window.addEventListener('scroll', controlNavbar)
+    //   return () =>{
+    //     window.removeEventListener('scroll', controlNavbar)
+    //   }
+    // },[])
+
+  // -------------------SCROLL DISAPPEAR EFFECT---------------------------------
+  // let [prevOffset, setPrevOffset] = useState(0)    
+  // let [scrollDirection, setScrollDirection] = useState(null)
+
+  // function useScrollDirection () {
+  //   let toggleScrollDirection = () => {
+  //     let scrollY = window.scrollY
+  //     console.log(scrollY)
+
+  //     if (scrollY === 0) {
+  //         setScrollDirection("up")
+
+  //     }
+  //     if (scrollY > prevOffset) {
+  //         setScrollDirection("down")
+
+
+  //     } else if (scrollY < prevOffset) {
+  //         setScrollDirection("up")
+
+  //     }
+
+  //     setPrevOffset(scrollY)
+
+  //   }
+
+  //   useEffect(() => {
+  //       window.addEventListener("scroll", toggleScrollDirection)
+  //       return () => {
+  //           window.removeEventListener("scroll", toggleScrollDirection)
+  //       }
+  //   })    
+  //   return scrollDirection 
+  // }
+
+  // // -------------------RETURN ---------------------------------
+
+  // return (
+  //   // <div className="navbar" onScroll={useScrollDirection}>
+  //   // <div className={`navbar ${useState ? 'up' : 'down' }`} onScroll={useScrollDirection} >
+  //     <div className={`navbar${useScrollDirection ? '-down' : '-up' }`}></div>
