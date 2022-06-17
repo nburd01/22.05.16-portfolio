@@ -6,14 +6,13 @@
     padding: 0 8em;
     position:  fixed ;
     background: rgba(205, 230, 60, 0.886)
-  
   } 
 
 .navbar_visibilityChange{
     display: none;
     transition: all smooth;
-
   } 
+
   .navbar .title-logo a{
     text-decoration: none;
     color: inherit
@@ -76,13 +75,18 @@
 
   @media screen and (max-width:1080px){
     
-    .navbar{
+    .navbar_visibilityChange{
+      display: none;
       width: 100%;
       padding: 0 ;
       height: auto;
       justify-content: right;
-
     }
+    .navbar{
+      position:  fixed ;
+      display: flex;
+      transition: all smooth;
+    } 
     
     .title{ 
       /* background-color: blue; */
