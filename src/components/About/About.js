@@ -28,7 +28,7 @@ export default function About() {
                   <p>My daily tech stack mainly consist of ReactJS, Ruby on Rails and REST APIs, but see the extended list below for more. To keep in touch or contact me go check out my social media accounts, where I'm most active and would love to have a chat!</p>
                 </div>
                 <div className="btn-cta">
-                  <button>Build my project</button>
+                  <input type="submit" value="Build my project"></input>
                 </div>
               </div>
             </div>
