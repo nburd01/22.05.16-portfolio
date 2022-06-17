@@ -81,7 +81,7 @@
     column-gap: 50px;
     grid-template-columns: 2fr 1fr 1fr;
     height: 100%;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
   }
 
   .left{
@@ -90,7 +90,7 @@
     display: flex;
     margin-right: 0 ;
     flex-direction: column;
-    background-color: rgb(127, 255, 227);
+    /* background-color: rgb(127, 255, 227); */
 
     position: static;
 
@@ -101,8 +101,8 @@
     grid-column-end: 4;
     display: flex;
     flex-direction: column;
-    padding-top: 10em;
-    background-color: var(--primary);
+    padding-top: 2em;
+    /* background-color: var(--primary); */
     width: 100%;
   }
 

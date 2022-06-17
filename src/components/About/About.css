@@ -55,11 +55,11 @@
   }
 
 
-  .btn-div { 
+  .btn-cta { 
     display: flex;
     justify-content: end;
   }
-  .btn-div button{
+  .btn-cta input{
     display: flex;
     background-color: var(--secondary);
     border: none;
@@ -93,6 +93,9 @@
         object-fit: contain;  
         border-radius: 10%;
         box-shadow: -20px -10px 0px 1px #d20f33;
-        ;
+      }
+      .btn-cta { 
+        display: center;
+        justify-content: center;
       }
     }
