@@ -1,17 +1,24 @@
 .navbar{
     display: flex;
+    position: fixed;  
+    top: 0vh;
+    height: 10vh;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0 8em;
     position:  fixed ;
-    background: rgba(205, 230, 60, 0.886)
+    background: rgba(250, 250, 250, 0.886);
+    transition: ease-in-out 0.5s;
+
+
   } 
 
-.navbar_visibilityChange{
-    display: none;
-    transition: all smooth;
+.navbar_active{
+    display: flex;
+    transition: ease-in-out all 0.5s  
   } 
+
 
   .navbar .title-logo a{
     text-decoration: none;

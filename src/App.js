@@ -33,17 +33,17 @@ function App() {
                 <div className="theme-toggle">
 
                         <div className="btn-toggle"  >
-                        <i>
-                        <FontAwesomeIcon onClick={switchTheme} icon={icon} size="2x"/>
-                        </i>
+                                <i>
+                                <FontAwesomeIcon onClick={switchTheme} icon={icon} size="2x"/>
+                                </i>
 
-                </div>
+                        </div>
+                        <Navbar />
                         
                 </div>
 
                 <div className="app-container">
 
-                                <Navbar />
 
                         <section className='one'>
                                 <About />

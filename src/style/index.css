@@ -68,7 +68,9 @@
     margin: auto; 
   }
 
-
+.one{
+  background-color: #19cc641f
+}
 
   .three{
     display: flex;
@@ -153,7 +155,7 @@
 
     .btn-toggle{
       display:flex;
-      position: fixed;
+      position: fixed;  
       top: 90vh;
       right:20px;
       justify-content: center;
@@ -182,6 +184,7 @@
 @media (max-width: 1080px){
   .app-container{
     scroll-snap-type: none;
+    padding-top: 10vh
   }
   .section{
     height: auto;
