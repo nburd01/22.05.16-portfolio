@@ -108,15 +108,12 @@ const [prevOffset, setPrevOffset] = useState(0)
 
 
   return (
-    // <div className="navbar">
-    <div className={visibilityChange ? 'navbar_visibilityChange' : 'navbar'}>
+    <div className={visibilityChange ? 'navbar_active' : 'navbar'}>
       <div className="title-logo">
         <h1>
         <Link to='#about'>Niall Burdon</Link>
         </h1>
       </div>
-
-      {/* <div className="navigation"> */}
         <nav>
             {(toggleMenu  || width > 1080) && (
                           
@@ -146,7 +143,6 @@ const [prevOffset, setPrevOffset] = useState(0)
               <div className="btn-burger" onClick={toggleNavSmallScreen} />
             </div>
         </nav>
-      {/* </div> */}
     </div>
   )
 }

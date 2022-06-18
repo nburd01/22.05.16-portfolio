@@ -10,9 +10,21 @@
     scroll-behavior: smooth;
 }
 
-[data-theme='dark'] {
-  background-color: var(--secondary);
-  color: var(--primary)
+.dark {
+  background-color: rgb(24, 24, 24);
+  color: #fff;
+  /* height: 100vh; */
+  transition: all 0.3s;
+}
+.dark a{
+  color: rgb(91, 138, 173)
+}
+
+.light {
+  background-color: #ffffff;
+  color: rgb(24, 24, 24);
+  /* height: 100vh; */
+  transition: all 0.3s;
 }
 
 .app {
@@ -68,7 +80,9 @@
     margin: auto; 
   }
 
-
+.one{
+  background-color: #19cc641f
+}
 
   .three{
     display: flex;
@@ -153,7 +167,7 @@
 
     .btn-toggle{
       display:flex;
-      position: fixed;
+      position: fixed;  
       top: 90vh;
       right:20px;
       justify-content: center;
@@ -182,6 +196,7 @@
 @media (max-width: 1080px){
   .app-container{
     scroll-snap-type: none;
+    padding-top: 10vh
   }
   .section{
     height: auto;
@@ -213,4 +228,4 @@
     display: flex;
     justify-content: right;
   }
-}
+} 
