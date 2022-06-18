@@ -22,7 +22,6 @@
   align-items: center;
   padding: 0 8em;
   position:  fixed ;
-  background-color: inherit;
   transition: ease-in-out 0.5s;
   transform: translateY(-100%);
   } 
@@ -58,6 +57,7 @@
     height: 100%;
     flex-direction: row;
     list-style-type: none;
+    color: inherit;
   }
   
   .items{
@@ -74,7 +74,7 @@
     display: none;
     height: 5px;
     width: 5px;
-    color: white;
+    color: inherit;
   }
 
   nav a{
@@ -100,7 +100,7 @@
     .navbar{
       position:  fixed ;
       display: flex;
-      transition: all smooth;
+      transition: all 0.5 smooth;
     } 
     
     .title{ 
