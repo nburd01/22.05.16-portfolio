@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from "react";
 import './style/index.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -10,39 +11,31 @@ import Contact from './components/Contact/Contact';
 import useLocalStorage from 'use-local-storage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import BtnToggle from 'components/BtnToggle/BtnToggle';
+import ThemeContext from './Context/ThemeContext';
+
 // import { products } from 'src/data.js';
 
 
 
 function App() {
-        const defaultLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-        const [theme, setTheme] = useLocalStorage('theme', defaultLight ? 'dark' : 'light');
+        const [currentTheme, setCurrentTheme] = useState(localStorage.selectTheme || 'light');
 
-        
-         const switchTheme = () => {
-                 const newTheme = theme === 'light' ? 'dark' : 'light';
-                 setTheme(newTheme)
-         }
-
-         const icon = theme === 'light' ? faSun : faMoon ;
+        useEffect (() => {
+          localStorage.setItem('selectTheme', currentTheme)
+        }, [currentTheme]);
          
  
   return (      
     
-        <div className="app" data-theme={theme} >
-                <div className="theme-toggle">
+<ThemeContext.Provider value={{currentTheme, toggleTheme: () => {currentTheme === "light" ? setCurrentTheme("dark") : setCurrentTheme("light")}}}>
+      <div className={currentTheme === "light" ? "app light" : "app dark"}>
 
-                        <div className="btn-toggle"  >
-                                <i>
-                                <FontAwesomeIcon onClick={switchTheme} icon={icon} size="2x"/>
-                                </i>
-
-                        </div>
-                        <Navbar />
+                <BtnToggle/>    
+                <Navbar />
                         
-                </div>
 
-                <div className="app-container">
+                {/* <div className="app-container"> */}
 
 
                         <section className='one'>
@@ -54,9 +47,9 @@ function App() {
                         </section>
 
                         <section className='three'>
-                                {/* {products.map(item => (  */}
+
                                 <Portfolio  />
-                                {/* ))} */}
+
                         </section>
 
                         <section className='four'>
@@ -75,9 +68,10 @@ function App() {
                                 <Footer  />
                         </section>
 
-                </div> 
+                {/* </div>  */}
  
         </div>
+</ThemeContext.Provider>
 
        );
      }

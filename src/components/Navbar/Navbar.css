@@ -8,10 +8,8 @@
     align-items: center;
     padding: 0 8em;
     position:  fixed ;
-    background: rgba(250, 250, 250, 0.886);
+    background-color: inherit;
     transition: ease-in-out 0.5s;
-
-
   } 
 
 .navbar_active{
@@ -24,15 +22,15 @@
   align-items: center;
   padding: 0 8em;
   position:  fixed ;
-  background: rgba(250, 250, 250, 0.886);
+  background-color: inherit;
   transition: ease-in-out 0.5s;
-    transform: translateY(-100%);
+  transform: translateY(-100%);
   } 
 
 
   .navbar .title-logo a{
     text-decoration: none;
-    color: inherit
+
   }
 
   .navbar .links{

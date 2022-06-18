@@ -4,7 +4,7 @@
     right: 20px;
     width:50px;
     height: 50px;
-    background:var(--primary);
+
     color:#F1F1F1;
     border:1px solid var(--secondary);
     border-radius:50%;
@@ -16,10 +16,10 @@
 }
 
 .btn-toggle.dark{
-    background:#333;
+    /* background:#333; */
     color:#F1F1F1;
 }   
 .btn-toggle.light{
-    background:#F1F1F1;
+    /* background:#F1F1F1; */
     color:#333;
 }   
