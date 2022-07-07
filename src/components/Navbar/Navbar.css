@@ -29,7 +29,11 @@
 
   .navbar .title-logo a{
     text-decoration: none;
-
+    color: inherit;
+  }
+  .navbar_active .title-logo a{
+    text-decoration: none;
+    color: inherit;
   }
 
   .navbar .links{
