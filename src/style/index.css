@@ -33,7 +33,7 @@
 
 .dark {
   background-color: var( --secondary);
-  color: var(--primary);
+  color: var(--primary); 
   
 }
 
