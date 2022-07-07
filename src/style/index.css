@@ -1,7 +1,7 @@
 *, *::before, *::after{
     box-sizing: border-box;
   }
-  
+/*   
   :root {
 
   --primary-light:#fffffe;
@@ -13,14 +13,8 @@
   --secondary-dark:#fffffe  ; 
   --third-dark:rgb(191, 0, 255); 
 
-
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-html,body{
-  font-family: 'Open-Sans', sans-serif;
-  }
-  
 @media(prefers-color-scheme:dark){
   :root{
     --primary:var(--primary-dark);
@@ -39,14 +33,20 @@ html,body{
 
 .dark {
   background-color: var( --secondary);
-  color: var(--primary);
+  color: var(--primary); 
   
 }
 
 .light {
   background-color: var( --pimary);
   color: var( --secondary);
-}
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html,body{
+  font-family: 'Open-Sans', sans-serif;
+  }
 
 .app {
   transition: all .5s;
@@ -61,8 +61,8 @@ html,body{
     margin: 0;
     font-family: 'PPNeueMontreal','Open Sans', 'sans-serif' ;
     font-weight: bold;
-    color: var(--secondary);
-    background-color: var(--primary);
+    /* color: var(--secondary);
+    background-color: var(--primary); */
 
     /* background: url('../assets/img/Firefox_Screenshot_2022-05-16T12-53-09.226Z.png'), no-repeat; */
   }
@@ -85,7 +85,7 @@ html,body{
 
   .three{
     display: flex;
-    background-color: #0f0e17;
+    /* background-color: #0f0e17; */
     scroll-snap-type: none; 
     overflow-y: none;
     align-items: start;
@@ -153,7 +153,7 @@ html,body{
     }
     .title-div h3::after{
       content:"";
-      background-color: rgba(117, 190, 218, 0.5);
+      /* background-color: rgba(117, 190, 218, 0.5); */
       display: flex;
       position:static;
       width: 100%;
