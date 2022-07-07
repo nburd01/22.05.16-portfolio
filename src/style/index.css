@@ -13,14 +13,9 @@
   --secondary-dark:#fffffe  ; 
   --third-dark:rgb(191, 0, 255); 
 
-
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-html,body{
-  font-family: 'Open-Sans', sans-serif;
-  }
-  
+
 @media(prefers-color-scheme:dark){
   :root{
     --primary:var(--primary-dark);
@@ -47,6 +42,12 @@ html,body{
   background-color: var( --pimary);
   color: var( --secondary);
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html,body{
+  font-family: 'Open-Sans', sans-serif;
+  }
 
 .app {
   transition: all .5s;
