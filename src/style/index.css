@@ -3,36 +3,53 @@
   }
   
   :root {
-  font-size: 16px;
-  --primary:#fffffe;
-  --secondary:#111827; 
-  --third:rgb(255, 0, 149); 
-    scroll-behavior: smooth;
+
+  --primary-light:#fffffe;
+  --secondary-light:#111827; 
+  --third-light:rgb(255, 0, 149); 
+
+
+  --primary-dark:#111827;
+  --secondary-dark:#fffffe  ; 
+  --third-dark:rgb(191, 0, 255); 
+
+
+}
+
+@media(prefers-color-scheme:dark){
+  :root{
+    --primary:var(--primary-dark);
+    --secondary:var(--secondary-dark);
+    --third:var(--third-dark);
+  }
+  }
+@media(prefers-color-scheme:light){
+  :root{
+    --primary:var(--primary-light);
+    --secondary:var(--secondary-light);
+    --third:var(--third-light);
+  }
 }
 
 .dark {
-  background-color: rgb(24, 24, 24);
-  color: #fff;
-  /* height: 100vh; */
-  transition: all 0.3s;
-}
-.dark a{
-  color: rgb(91, 138, 173)
+  background-color: var( --secondary);
+  color: var(--primary);
+  
 }
 
 .light {
-  background-color: #ffffff;
-  color: rgb(24, 24, 24);
-  /* height: 100vh; */
-  transition: all 0.3s;
+  background-color: var( --pimary);
+  color: var( --secondary);
 }
 
 .app {
   transition: all .5s;
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 
-@font-face {
+/* @font-face {
   font-family: 'PPNeueMontreal';
   src: url(../assets/fonts/PPNeueMontreal-Book.woff2) format('woff2');
   font-weight: bold;
@@ -49,7 +66,7 @@
   src: url(../assets/fonts/PPNeueMontreal-Thin.woff2) format('woff2');
   font-weight: 'light';
   font-style: normal;
-}
+} */
 
 /*   --------------------------   */
 
@@ -81,7 +98,7 @@
   }
 
 .one{
-  background-color: #19cc641f
+  /* background-color: #19cc641f */
 }
 
   .three{
