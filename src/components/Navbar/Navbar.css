@@ -8,7 +8,7 @@
     align-items: center;
     padding: 0 8em;
     position:  fixed ;
-    background-color: inherit;
+    background-color: var(--third);
     transition: ease-in-out 0.5s;
   } 
 
