@@ -20,13 +20,15 @@
 html,body{
   font-family: 'Open-Sans', sans-serif;
   }
+  
 @media(prefers-color-scheme:dark){
   :root{
     --primary:var(--primary-dark);
     --secondary:var(--secondary-dark);
     --third:var(--third-dark);
   }
-  }
+}
+
 @media(prefers-color-scheme:light){
   :root{
     --primary:var(--primary-light);
@@ -51,26 +53,6 @@ html,body{
   scroll-behavior: smooth;
   font-size: 16px;
 }
-
-
-/* @font-face {
-  font-family: 'PPNeueMontreal';
-  src: url(../assets/fonts/PPNeueMontreal-Book.woff2) format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PPNeueMontreal';
-  src: url(../assets/fonts/PPNeueMontreal-SemiBold.woff2) format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PPNeueMontreal';
-  src: url(../assets/fonts/PPNeueMontreal-Thin.woff2) format('woff2');
-  font-weight: 'light';
-  font-style: normal;
-} */
 
 /*   --------------------------   */
 
