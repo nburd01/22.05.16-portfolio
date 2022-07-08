@@ -30,10 +30,14 @@
   .navbar .title-logo a{
     text-decoration: none;
     color: inherit;
+<<<<<<< Updated upstream
   }
   .navbar_active .title-logo a{
     text-decoration: none;
     color: inherit;
+=======
+    transition: inherit;
+>>>>>>> Stashed changes
   }
 
   .navbar .links{
@@ -204,5 +208,8 @@
       top: 20px;
       float: left;
       justify-content: left;
+    }
+    .navbar-active .title-logo a{
+      color: inherit;
     }
   }
