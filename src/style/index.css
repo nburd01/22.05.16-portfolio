@@ -1,26 +1,28 @@
 *, *::before, *::after{
     box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-/*   
-  :root {
+  scroll-behavior: smooth;
 
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+  html,body{
+    font-family: 'Open-Sans', sans-serif;
+    scroll-snap-type: y mandatory;
+    }
+  
+  :root {
   --primary-light:#fffffe;
   --secondary-light:#111827; 
   --third-light:rgb(255, 0, 149); 
+  --fourth-light:#a15abf; 
 
 
   --primary-dark:#111827;
   --secondary-dark:#fffffe  ; 
-  --third-dark:rgb(191, 0, 255); 
-
+  --third-dark:#5ABFA3; 
+  --fourth-dark:#bfb55a; 
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-html,body{
-  font-family: 'Open Sans', sans-serif;
-  }
   
 @media(prefers-color-scheme:dark){
   :root{
@@ -38,28 +40,15 @@ html,body{
   }
 }
 
-[color-scheme="light"]{
-  --primary-light:#fffffe;
-  --secondary-light:#111827; 
-  --third-light:rgb(255, 0, 149); 
-}
-
-[color-scheme="dark"] {
-  --primary-dark:#111827;
-  --secondary-dark:#fffffe  ; 
-  --third-dark:rgb(191, 0, 255); 
+.light {
+  background-color: var( --secondary);
+  color: var(--primary);
 }
 
 .dark {
-  background-color: var( --secondary);
-  color: var(--primary); 
-  
-}
-
-.light {
   background-color: var( --pimary);
   color: var( --secondary);
-} */
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
@@ -88,32 +77,43 @@ html,body{
 
   
   .app-container{
-    scroll-snap-type: y mandatory; 
+
     /* overflow-y: scroll; */
 
   }
 
   section{
     display: flex;
-    height: auto;
+    height: 100vh;
     justify-content: center;  
     align-items: center; 
     scroll-snap-align: start; 
     margin: auto; 
+    scroll-snap-type: y proximity ; 
+
   }
 
   .three{
     display: flex;
-    /* background-color: #0f0e17; */
-    scroll-snap-type: none; 
-    overflow-y: none;
-    align-items: start;
-    justify-content: start;
+    background-color: #0f0e17;
+    align-items: none;
+    justify-content: none;
     height: auto;
+    scroll-snap-type: none;
+    /* overflow-y: scroll; */
+    scroll-snap-align: start; 
+
+
+ 
   }
 
-  .four, .five, .six, .seven{
+  .four{
+    scroll-snap-type: none;
+  }
+
+  section.four, section.five, section.six, section.seven{
     height: 100vh;
+    scroll-snap-type: y mandatory ; 
   }
 
   .container{
