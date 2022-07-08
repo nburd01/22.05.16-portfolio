@@ -1,9 +1,12 @@
-import { createContext } from 'react';
+function getCurrentTheme(){
+    let themeContext = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-const ThemeContext = createContext({ currentTheme: null})
+    localStorage.getItem('dark.theme') ? theme = localStorage.getItem('dark.theme') : theme = localStorage.getItem('light.theme');
 
-export default ThemeContext;
+    return theme;
+  }
 
+  export default getCurrentTheme()
 
 // -----------------------------------------------------
 // import React, {createContext, useState} from 'react'
