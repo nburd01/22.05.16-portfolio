@@ -69,10 +69,6 @@
   }
 
   
-  .app-container{
-
-    /* overflow-y: scroll; */
-  }
 
   section{
     display: flex;
