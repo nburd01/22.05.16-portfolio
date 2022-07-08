@@ -17,7 +17,13 @@ export default function About() {
             <div className="img-div">
 
                   <img src={PP_Niall} alt="profile img" />
-                </div>
+              <div className="blog-home">
+            <svg  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#08BDBA" d="M50.4,-20C56.3,1.9,46,25.5,26.3,40.8C6.7,56.1,-22.2,63.2,-39.3,51.4C-56.4,39.6,-61.8,8.9,-53.3,-16.6C-44.8,-42,-22.4,-62.1,-0.1,-62.1C22.2,-62.1,44.4,-41.9,50.4,-20Z" transform="translate(100 100)" />
+            </svg>
+              </div>  
+            </div>
+
 
             
             <div className="description-div">
