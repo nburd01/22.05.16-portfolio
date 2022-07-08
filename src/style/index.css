@@ -49,6 +49,12 @@
   color: var( --secondary);
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+html,body{
+  font-family: 'Open-Sans', sans-serif;
+  }
+
 .pp {
   transition: all .5s;
   scroll-behavior: smooth;
@@ -62,8 +68,8 @@
     margin: 0;
     font-family: 'PPNeueMontreal','Open Sans', 'sans-serif' ;
     font-weight: bold;
-    color: var(--secondary);
-    background-color: var(--primary);
+    /* color: var(--secondary);
+    background-color: var(--primary); */
 
     /* background: url('../assets/img/Firefox_Screenshot_2022-05-16T12-53-09.226Z.png'), no-repeat; */
   }
