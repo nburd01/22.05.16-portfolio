@@ -16,7 +16,6 @@
   --third-light:rgb(255, 0, 149); 
   --fourth-light:#a15abf; 
 
-
   --primary-dark:#111827;
   --secondary-dark:#fffffe  ; 
   --third-dark:#5ABFA3; 
@@ -36,7 +35,7 @@
   :root{
     --primary:var(--primary-light);
     --secondary:var(--secondary-light);
-    --third:var(--third-light);
+    --third: var(--third-light);
   }
 }
 
@@ -79,7 +78,6 @@ html,body{
   .app-container{
 
     /* overflow-y: scroll; */
-
   }
 
   section{
@@ -126,7 +124,6 @@ html,body{
     align-items: center;
     justify-content: center;
     align-items: space-around;
-    /* background-color: #d20f3356 */
   }
   .container-small{
     display: flex;
@@ -138,7 +135,6 @@ html,body{
     align-items: center;
     justify-content: center;
     align-items: space-between;
-    /* background-color: #d20f3356 */
   }
   .container-large{
     display: flex;
@@ -150,7 +146,6 @@ html,body{
     align-items: center;
     justify-content: center;
     align-items: space-between;
-    /* background-color: #d20f3356 */
   }
 
 /*   --------------------------   */
@@ -160,29 +155,22 @@ html,body{
     width: contain;
     display: flex;
     justify-content: center;  
-    /* background-color: rgb(214, 127, 255); */
 
   }
     .title-div h3{
       width: 100%;
       display: block;
       font-weight: thin;
-    /* background-color: rgb(214, 127, 255); */
 
     }
     .title-div h3::after{
       content:"";
-
-      /* background-color: rgba(117, 190, 218, 0.5); */
-
       background-color: var(--third);
-
       display: flex;
-      position:relative;
+      position:static;
       width: 100%;
       height: 10px;
-      top:-8px;
-      z-index: -1;
+      top:-5px;
     }
 
 

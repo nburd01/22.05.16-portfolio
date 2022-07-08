@@ -1,3 +1,6 @@
+.one{
+  position: relative;
+}
 .body-sub-title{
   display: flex;
   /* background-color: rgb(127, 140, 255); */
@@ -21,18 +24,25 @@
   .img-container{
     object-fit: contain;
     max-height: 60vh;
-
   }
 
     .img-div img{
       display: flex;
       max-width: 100%;
       max-height: 60vh;
-      height: auto;
+      max-height: auto;
       object-fit: contain;  
       border-radius: 10%;
-      box-shadow: -50px -30px 0px 1px var(--third);
-      ;
+
+    }
+
+    .blog-home{
+      position: absolute ;
+      right: 55%; 
+      top: 15%; 
+      z-index: -1;
+      width: 100%;
+      max-width: 50%;
     }
 
   .description-content{
@@ -76,6 +86,7 @@
     font-size: 16px;
     cursor: pointer;
   }
+
 
 
     @media (max-width: 770px){
