@@ -58,15 +58,16 @@
   .btn-cta { 
     display: flex;
     justify-content: end;
-    color: inherit;
+
+    ;
   }
 
   .btn-cta input{
     display: flex;
-    background-color: inherit;
+    background-color: var(--primary);
     border: none;
     border-radius: 15px;
-    color: inherit;
+    color: var(--secondary);
     padding: 15px 32px;
     margin-right: 2em;
     text-align: center;

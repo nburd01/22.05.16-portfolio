@@ -7,7 +7,11 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 export default function BtnToggle() {
  
   const theme = useContext(ThemeContext);
+
+
   const icon = theme === 'light' ? faSun : faMoon ;
+  console.log(icon)
+
   const mode = (theme.currentTheme === 'light') ?  
     <i> 
       <FontAwesomeIcon icon={faSun} size="2x"></FontAwesomeIcon>
@@ -16,7 +20,8 @@ export default function BtnToggle() {
     <i> 
     <FontAwesomeIcon icon={faMoon} size="2x"></FontAwesomeIcon>
   </i> 
-
+  console.log(theme)
+  
   return (
 
     <div className='btn-toggle' onClick={theme.toggleTheme}>
