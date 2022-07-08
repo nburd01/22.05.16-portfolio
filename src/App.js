@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import './style/index.css';
+// import './style/index.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Tech from './components/Tech/Tech';
@@ -35,7 +35,7 @@ function App() {
                 <Navbar />
                         
 
-                {/* <div className="app-container"> */}
+                <div className="app-container">
 
 
                         <section className='one'>
@@ -68,7 +68,7 @@ function App() {
                                 <Footer  />
                         </section>
 
-                {/* </div>  */}
+                </div> 
  
         </div>
 </ThemeContext.Provider>
