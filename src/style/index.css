@@ -1,5 +1,6 @@
 *, *::before, *::after{
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   :root {
@@ -12,7 +13,6 @@
   --primary-dark:#111827;
   --secondary-dark:#fffffe  ; 
   --third-dark:rgb(191, 0, 255); 
-
 
 }
 
@@ -48,7 +48,7 @@ html,body{
   color: var( --secondary);
 }
 
-.app {
+.pp {
   transition: all .5s;
   scroll-behavior: smooth;
   font-size: 16px;
